@@ -26,7 +26,22 @@ const Hero = () => {
 
       <ComputersCanvas />
 
-      
+      {/* Scroll indicator animation */}
+      <div className="absolute hidden sm:flex bottom-2 w-full  justify-center items-center">
+        <a href="#about">
+          <div className="w-[36px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
+            <motion.div
+              animate={{ y: [0, 30, 0] }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
+              className="w-3 h-3 rounded-full bg-secondary mb-1"
+            ></motion.div>
+          </div>
+        </a>
+      </div>
     </section>
   );
 };
