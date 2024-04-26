@@ -23,7 +23,7 @@ const ExperienceCard = ({ experience }) => {
           <img
             src={experience.icon}
             alt={experience.company_name}
-            className="w-[60%] h-[60%] object-contain"
+            className="w-[90%] h-[90%] object-contain"
           />
         </div>
       }
@@ -55,8 +55,10 @@ const Experience = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>What I have done so far</p>
-        <h2 className={styles.sectionHeadText}>Work Experience.</h2>
+        <p className={styles.sectionSubText}>Where do I study</p>
+        <h2 className={styles.sectionHeadText}>
+          Education, Bootcamp, and Workshop
+        </h2>
       </motion.div>
 
       <div className="mt-20 flex flex-col">
@@ -70,4 +72,4 @@ const Experience = () => {
   );
 };
 
-export default SectionWrapper(Experience, "work");
+export default SectionWrapper(Experience, "education");

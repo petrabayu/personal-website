@@ -7,10 +7,6 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
-// template_iyq0yer -> Template ID
-// service_w4ie89e -> Service ID
-// DvGgUrcGQOoEUdJA4 -> Public Key
-
 const Contact = () => {
   const fromRef = useRef();
   const [loading, setLoading] = useState(false);
@@ -81,6 +77,7 @@ const Contact = () => {
             <input
               type="text"
               name="name"
+              required
               value={form.name}
               onChange={handleChange}
               placeholder="What is your name ?"
@@ -94,6 +91,7 @@ const Contact = () => {
             <input
               type="email"
               name="email"
+              required
               value={form.email}
               onChange={handleChange}
               placeholder="What is your email ?"
@@ -107,6 +105,7 @@ const Contact = () => {
             <textarea
               rows="7"
               name="message"
+              required
               value={form.message}
               onChange={handleChange}
               placeholder="What do you want to say ?"
@@ -115,7 +114,7 @@ const Contact = () => {
           </label>
           <button
             type="submit"
-            className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
+            className="bg-white hover:bg-secondary py-3 px-8 outline-none text-tertiary font-bold shadow-md shadow-primary rounded-xl"
           >
             {loading ? "Sending..." : "Send"}
           </button>
