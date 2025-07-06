@@ -127,8 +127,8 @@ const experiences = [
     company_name: "University of Gadjah Mada",
     icon: ugm,
     iconBg: "#383E56",
-    date: "August 2019 - Now",
-    points: ["Cumulative GPA 3.48/4.00"],
+    date: "August 2019 - January 2025",
+    points: ["Cumulative GPA 3.50/4.00"],
   },
   {
     title: "Web Development Bootcamp",
